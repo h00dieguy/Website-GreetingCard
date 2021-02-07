@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Valentine's Day Greeting Card</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/birthday.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  </head>
+
+  <body style="background-image: url(images/valentinebg.jpg)">
+    <!-- navigation Bar Start -->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Great Wishes</label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>
+  <img src="images/logo.png" class="logoDesign" alt="">
+</li>
+        <!-- <li><a href="#">Services</a></li> -->
+        <!-- <li><a href="#">Feedback</a></li> -->
+      </ul>
+    </nav>
+    <!-- navigation bar End -->
+
+
+    <div class="row">
+      <!-- column1 -->
+      <!-- style="background-color:lightblue;" -->
+      <div class="columnHeader" >
+<marquee>Your choice our card!!!</marquee>
+
+
+            <!-- <p>Some other details should come here!</p> -->
+      </div>
+
+      <!-- column2 -->
+      <!-- style="background-color:purple;" -->
+      <div class="columnCard" >
+        <h2 class="mainHeader">Grab your Greeting Card </h2>
+        <div class="birthday-card" id="html-content-holder">
+        <h3 class="upperText">To <span id="to"></span></h3>
+        <img id="cardImage" class="cardImg" alt="">
+        <h3 class="lowerText">From <span id="from"></span></h3>
+        <p><span id="userText"></span></p>
+
+        </div>
+      </div>
+
+      <!-- column3 -->
+      <!-- style="background-color:orange;" -->
+      <div class="columnGallery" >
+        <h2 class="galleryHeader">Select image for Greeting Card</h2>
+
+         <div class="gallery">
+           <img onclick="changeImage(valentinesImg1)" id="image1" class="galleryImages">
+         </div>
+
+         <div class="gallery">
+           <img onclick="changeImage(valentinesImg2)" id="image2" class="galleryImages">
+         </div>
+
+         <div class="gallery">
+           <img onclick="changeImage(valentinesImg3)" id="image3" class="galleryImages">
+         </div>
+
+        <div class="gallery">
+          <img onclick="changeImage(valentinesImg4)" id="image4" class="galleryImages">
+         </div>
+
+         <div class="gallery">
+           <img onclick="changeImage(valentinesImg5)" id="image5" class="galleryImages">
+         </div>
+
+         <div class="gallery">
+           <img onclick="changeImage(valentinesImg6)" id="image6" class="galleryImages">
+         </div>
+      </div>
+
+      <!-- column4 -->
+      <!-- style="background-color:lightgreen;" -->
+       <div class="columnButtons" >
+         <button id="btn-Convert-Html2Image" class="btn" ><i class="fa fa-download" style="margin-right:5px;"></i>Download</button>
+       </div>
+       </div>
+
+       <div class='message'>
+       <div class='check'>
+        &#10004;
+       </div>
+       <p>
+        Success
+       </p>
+       <p>
+        Let others also spread wonderful wishes through us, So do share our website!
+       </p>
+       <button id='ok'>
+        OK
+       </button>
+       </div>
+
+
+    <!-- scripts here -->
+    <script src="js/valentines.js" charset="utf-8"></script>
+    <script src="js/birthday.js" charset="utf-8"></script>
+
+  </body>
+</html>

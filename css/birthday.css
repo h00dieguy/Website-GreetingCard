@@ -1,0 +1,373 @@
+
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Great+Vibes&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://www.fontspace.com/cassandra-font-f29711');
+
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+
+
+
+
+.message {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  font-weight: 300;
+  color: #2c2928;
+  opacity: 0;
+  transition: top 0.3s cubic-bezier(0.31, 0.25, 0.5, 1.5), opacity 0.2s ease-in-out;
+}
+
+
+.message .check {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(4);
+  width: 65px;
+  height: 65px;
+  background: #71c341;
+  color: white;
+  font-size: 3.8rem;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: transform 0.2s 0.25s cubic-bezier(0.31, 0.25, 0.5, 1.5), opacity 0.1s 0.25s ease-in-out;
+}
+
+.message .scaledown {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+.message p {
+  font-size: 1.1rem;
+  margin: 25px 0px;
+  padding: 0;
+}
+.message p:nth-child(2) {
+  font-size: 2.3rem;
+  margin: 40px 0px 0px 0px;
+}
+.message #ok {
+  position: relative;
+  color: white;
+  border: 0;
+  background: #71c341;
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  transition: background 0.2s ease;
+  outline: none;
+}
+.message #ok:hover {
+  background: #8ecf68;
+}
+.message #ok:active {
+  background: #5a9f32;
+}
+
+.comein {
+  top: 150px;
+  opacity: 1;
+}
+/* vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv */
+
+* {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  /* background: #355389; */
+  /* background-image: url("../images/bdaybg.jpg"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+
+/* columns */
+.row{
+
+  background: rgba(70,110,182, 0.4);
+  /* background: rgba(132,106,221,0.7); /*purple */
+  /* background: rgba(162,52,86, 0.6); red */
+
+}
+.columnCard {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  /* background: rgba(162,52,86, 0.5); */
+
+}
+
+.columnGallery {
+  float: left;
+  width: 50%;
+  padding: 10px;
+/* background: rgba(70,110,182, 0.2); */
+}
+
+.columnButtons {
+  float: right;
+  width: 50%;
+  padding: 15px 0 40px 20px;
+}
+
+.columnHeader {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  color: cyan;
+  font-style: italic;
+  background: rgb(138,35,79, 0.3);
+  /* background: rgba(70,110,182, 0.4); */
+
+  /* background: rgba(53,83,137,0.2); */
+  /* background: #466eb6; */
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Image Gallery */
+div.gallery {
+  margin: 10px 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height: 180px;
+  cursor: pointer;
+  transition-property: background, -webkit-transform;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+
+}
+
+ div.gallery:hover
+{
+border-radius: 8%;
+  -webkit-transform: scale(0.9);
+          -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  border: 1px solid #777;
+}
+div.gallery img:hover {
+  border-radius: 8%;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #4d1629;
+
+}
+
+/* font-family: 'Cookie', cursive; */
+/* font-family: 'Courgette', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive; */
+
+.upperText{
+  margin-bottom: 3px;
+  margin-top: 10px;
+  font-weight: 550;
+  text-align: left;
+  font-family: 'Courgette', cursive;
+  color:#4d1629;
+
+
+}
+
+.lowerText{
+  margin-top: 3px;
+  margin-bottom: 10px;
+  font-weight: 550;
+  text-align: right;
+  padding-bottom: 30px;
+  font-family: 'Courgette', cursive;
+  color:#4d1629;
+
+}
+
+#userText{
+  margin-bottom: 5px;
+  color:blue;
+  font-size: 30px;
+  font-kerning: normal;
+  font-family: 'Cookie', cursive;
+}
+
+/* Greeting Card */
+.birthday-card {
+  border: 7px solid purple;
+  border-style: ridge;
+  /* border-image-source: url("../border4.jpg"); */
+  /* border-image: linear-gradient(rgb(162,52,86), rgb(53,83,137)) 1; */
+    /* border-image-slice: 1; */
+/* border-image-slice: 60 30; */
+  margin: 10px auto;
+  padding: 16px;
+  max-width: 512px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 24px 40px -8px #311B92;
+}
+.birthday-card img {
+    width: 100%;
+  height: 100%;
+  border: 2px solid #4d1629;
+}
+
+
+/* Heading */
+.mainHeader{
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: black
+;
+  font-size: 24px;
+  margin : 20px auto;
+  max-width: 512px;
+  /* background: rgba(132,106,221,0.4); */
+}
+/* h2{
+  font-family: Montserrat-Regular;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #1e5f74;
+} */
+
+
+.galleryHeader{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #1e5f74;
+  margin-top: 70px;
+  margin-bottom: 10px;
+}
+/* Download Button */
+/* .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+
+  width: 94%;
+  text-decoration: none;
+  height: 50px;
+  margin:10px 18px;
+  display:block;
+  border-radius: 4px;
+} */
+
+.btn {
+  border: 0;
+  background: #0087cc;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 #006599;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+.btn:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+}
+
+
+/* Darker background on mouse-over */
+/* .btn:hover {
+  background-color: RoyalBlue;
+} */
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  body{
+    margin: 0;
+  }
+  .columnCard {
+    float: left;
+    width: 100%;
+  }
+
+  .columnGallery {
+    float: left;
+    width: 100%;
+  }
+
+  .columnButtons {
+    padding-left: 20px;
+    float: left;
+    width: 100%;
+  }
+
+  .columnHeader {
+    margin-top: 70px;
+
+    float: left;
+    width: 100%;
+  }
+
+  div.gallery {
+    width: 140px;
+    height: 140px;
+  }
+
+}
+
+
+@media screen and (width: 768px) {
+  .mainHeader{
+    margin: 20px 80px;
+  }
+
+  .columnHeader {
+    margin-top: 70px;
+  }
+
+  .columnCard {
+    float: left;
+    width: 100%;
+  }
+  .columnGallery {
+    padding: 0 80px;
+    float: left;
+    width: 100%;
+    /* background: rgba(70,110,182, 0.4); */
+  }
+
+  .columnButtons {
+    float: left;
+    width: 100%;
+    padding-left: 90px;
+}
+}

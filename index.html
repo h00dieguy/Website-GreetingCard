@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Greeting Cards</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/navbar.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<!--===============================================================================================-->
+</head>
+<body>
+	<!-- navigation Bar Start -->
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">Great Wishes</label>
+		<ul>
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li>
+  <img src="images/logo.png" class="logoDesign" alt="">
+</li>
+			<!-- <li><a href="#">Services</a></li> -->
+			<!-- <li><a href="#">Feedback</a></li> -->
+		</ul>
+	</nav>
+	<!-- navigation bar End -->
+
+	<!-- detail card -->
+	<div class="bg-contact100" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact100">
+			<div class="wrap-contact100">
+				<div class="contact100-pic js-tilt" data-tilt>
+					<img src="images/img4.png" alt="IMG">
+				</div>
+
+				<div class="contact100-form ">
+					<span class="contact100-form-title">
+						Get your Greeting Card!
+					</span>
+
+					<div class="wrap-input100 ">
+						<input required class="input100" id="from" type="text" name="from" placeholder="From" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100">
+						<input required class="input100" id="to" type="text" name="to" placeholder="To" required>
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100">
+						<div class="input100">
+							<span class="focus-input100"></span>
+
+                    <select required id="occation" class="category">
+                        <option selected disabled value="">Choose Occasion</option>
+												<option value="birthday">Birthday</option>
+												<option value="christmas">Christmas</option>
+											  <option value="diwali">Diwali</option>
+												<option value="eid">Eid</option>
+											  <option value="ganeshchaturthi">Ganesh Chaturthi</option>
+											  <option value="gudhipadva">Gudhi Padva</option>
+											  <option value="holi">Holi</option>
+												<option value="independence">Independence Day</option>
+												<option value="navratri">Navratri</option>
+											  <!-- <option value="newyear">New Year</option> -->
+												<option value="rakshabandhan">RakshaBandhan</option>
+												<option value="republic">Republic Day</option>
+											  <option value="valentine">Valentine's Day</option>
+                      </select>
+
+											<span class="symbol-input100">
+												<i class="fa fa-calendar-alt" aria-hidden="true"></i>
+											</span>
+                      <div class="arrow"></div>
+										</div>
+
+                </div>
+
+
+					<div class="wrap-input100">
+						<textarea required class="input100" id="userText" name="userText" placeholder="Your Message . . ."></textarea>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-contact100-form-btn">
+						<button class="contact100-form-btn" onclick="getData()">
+							Create
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--
+	<script>
+	function getData(){
+	var from = document.getElementById("from").value;
+	console.log(from);
+	var to = document.getElementById("to").value;
+	var userText = document.getElementById("userText").value;
+
+
+	 localStorage.setItem("txtValue", from);
+	 localStorage.setItem("txtValue1", to);
+	 localStorage.setItem("txtValue2", userText);
+
+	var occation= document.getElementById("occation").value;
+
+
+
+	if (occation=="birthday") {
+
+	window.location = "base.html";
+
+	}
+	else{
+
+	window.location='birthday.html'
+
+	}
+
+
+
+	}
+
+
+
+	</script> -->
+
+
+
+<script src="js/index.js" charset="utf-8"></script>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<!-- <script src="vendor/bootstrap/js/popper.js"></script> -->
+	<!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+
+
+</body>
+</html>
